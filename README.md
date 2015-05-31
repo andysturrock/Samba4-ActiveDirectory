@@ -1,4 +1,4 @@
-# activedirectory
+# Samba4-ActiveDirectory
 Scripts and code for Active Directory integration
 
 Scripts and their purpose

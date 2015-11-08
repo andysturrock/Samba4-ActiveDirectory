@@ -13,3 +13,6 @@ REALM=`echo $DOMAIN | tr [a-z] [A-Z]`
 # Called DNS1 as that's what is used in all the
 # network config scrips.
 DNS1=192.168.0.1
+
+# Administrator account which has join domain permissions
+Administrator=Administrator

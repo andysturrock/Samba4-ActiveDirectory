@@ -39,11 +39,16 @@ ntpdate clock.redhat.com
 enableService ntpd
 startService  ntpd
 
-echo "Installing adcli..."
+##echo "Installing adcli..."
 yum -y install adcli
 
+echo "Installing realmd..."
+yum -y install realmd
+
 echo "Joining domain..."
-adcli -v join $DOMAIN
+#adcli -v join $DOMAIN
+realm -v join $DOMAIN -U ${Administrator}@${REALM}
+
 
 echo "Setting up kerberos client tools..."
 yum -y install krb5-workstation

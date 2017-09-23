@@ -272,7 +272,7 @@ echo "Disabling password complexity..."
 
 echo "Adding users..."
 /usr/local/samba/bin/samba-tool user add user1 ChangeMe1 --must-change-at-next-login --surname=Surname --given-name=FirstName --uid=user1 --uid-number=10000 --gid-number=10000 --login-shell=/bin/bash
-/usr/local/samba/bin/samba-tool user add fiona ChangeMe1 --must-change-at-next-login --surname=Surname --given-name=FirstName --uid=user2 --uid-number=10001 --gid-number=10000 --login-shell=/bin/bash
+/usr/local/samba/bin/samba-tool user add user2 ChangeMe1 --must-change-at-next-login --surname=Surname --given-name=FirstName --uid=user2 --uid-number=10001 --gid-number=10000 --login-shell=/bin/bash
 
 echo "Now manually set the group id and NIS domain using dsa.msc"
 # Change passwords like this (on domain controller box)
